@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+@theme {
+  --color-primary-navy: #16243e;
+  --color-primary-navy-dark: #0c1a30;
+  --color-accent-orange: #ff6100;
+  --color-accent-orange-hover: #e55500;
+  --color-bg-light: #f4f6fa;
+  --font-roboto: "Roboto", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+/* Redesigned main orange CTA buttons */
+.btn-gradient {
+  background: linear-gradient(to right, #ff6100, #ff7a18);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(255, 97, 0, 0.2);
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #e55500, #ff6100);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 97, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn-gradient:active {
+  transform: translateY(0);
+}
+
+.border-btnColor {
+  color: #ff6100;
+}
+
+/* Auth forms button styles */
+.custom-btn {
+  background: #ff6100;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 6px;
+  margin: 12px 0;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 97, 0, 0.15);
+}
+
+.custom-btn:hover {
+  background: #e55500;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(255, 97, 0, 0.25);
+}
+
+.custom-btn:active {
+  transform: translateY(0);
+}
+
+.text-btnColor {
+  color: #ff6100;
+}
+
+/* Custom dashboard and general styles */
+.dashboard-card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-item-active {
+  background-color: #e8ebf1;
+  color: #ff6100;
+  border-left: 4px solid #ff6100;
+}
+
+/* Webkit scrollbar customizations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
